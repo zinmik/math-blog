@@ -24,8 +24,8 @@
 {{ $katexAutoRenderJs := resources.Get "katex/contrib/auto-render.mjs" }}
 
 {{ if hugo.IsProduction }}
-  {{ $katexJs = $katexJs | minify }}
-  {{ $katexAutoRenderJs = $katexAutoRenderJs | minify }}
+  {{ $katexJs = $katexJs }}
+  {{ $katexAutoRenderJs = $katexAutoRenderJs }}
 {{ end }}
 
 <script type="module">
