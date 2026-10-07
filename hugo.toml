@@ -1,3 +1,15 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://zinmik.github.io/math-blog/'
 locale = 'en-us'
-title = 'My New Hugo Project'
+title = 'Mathematical Adumbrations'
+theme = "github.com/ananthb/jughead"
+
+[markup.goldmark.extensions.passthrough]
+enable = true
+
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['$$', '$$']]
+inline = [['$', '$']]
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
