@@ -1,6 +1,5 @@
 +++
 date = '2026-10-07T08:45:36+08:00'
-draft = true
 title = 'First Post'
 layout = 'blog'
 katex = true
