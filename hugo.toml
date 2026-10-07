@@ -13,3 +13,16 @@ inline = [['$', '$']]
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[params.giscus]
+repo = "zinmik/math-blog"
+repoId = "R_kgDOU-0p-A"
+category = "Announcements"
+categoryId = "DIC_kwDOU-0p-M4DHN4A"
+mapping = "pathname"
+strict = "0"
+reactionsEnabled = "1"
+emitMetadata = "0"
+inputPosition = "bottom"
+theme = "preferred_color_scheme"
+lang = "en"
