@@ -2,13 +2,16 @@ baseURL = 'https://zinmik.github.io/math-blog/'
 locale = 'en-us'
 title = 'Mathematical Adumbrations'
 theme = "github.com/ananthb/jughead"
+copyright = "Mikulas Zindulka"
 
-[markup.goldmark.extensions.passthrough]
-enable = true
-
-[markup.goldmark.extensions.passthrough.delimiters]
-block = [['$$', '$$']]
-inline = [['$', '$']]
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$'], ['\[', '\]']]
+          inline = [['$', '$'], ['\(', '\)']]
 
 [caches]
   [caches.images]
@@ -26,3 +29,8 @@ emitMetadata = "0"
 inputPosition = "bottom"
 theme = "preferred_color_scheme"
 lang = "en"
+
+[[menus.main]]
+name = 'About'
+pageRef = 'about'
+weight = 10

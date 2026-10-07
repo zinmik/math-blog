@@ -4,21 +4,16 @@
       <header>
         <h1>{{ .Title }}</h1>
         <section>
-          <time datetime="{{ dateFormat "2006-01-02 15:04" .Date }}">
-            {{ dateFormat "Jan 2, 2006" .Date }}
-          </time>
-          &middot; {{ .ReadingTime }} min read
+          {{ if .Params.showDate }}
+            <time datetime="{{ dateFormat "2006-01-02 15:04" .Date }}">
+              {{ dateFormat "Jan 2, 2006" .Date }}
+            </time>
+            &middot; {{ .ReadingTime }} min read
+          {{ end }}
           {{ if .Draft }}
             <mark>DRAFT</mark>
           {{ end }}
         </section>
-
-        {{ if in .TableOfContents "li" }}
-          <section>
-            <h2>Table of Contents</h2>
-            <aside>{{ .TableOfContents }}</aside>
-          </section>
-        {{ end }}
       </header>
 
       <main>{{ .Content }}</main>
