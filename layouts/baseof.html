@@ -12,6 +12,9 @@
     {{ if (.Params.mermaid) }}
       {{ partial "mermaid.html" }}
     {{ end }}
+
+    <!-- For the icon in the browser tab to appear -->
+    <link rel="icon" href="{{ "favicon.ico" | relURL }}" type="image/x-icon">
   </head>
 
   <body>
