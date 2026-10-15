@@ -12,6 +12,8 @@ copyright = "Mikulas Zindulka"
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['$$', '$$'], ['\[', '\]']]
           inline = [['$', '$'], ['\(', '\)']]
+    [markup.goldmark.renderer]
+      unsafe=true
 
 [caches]
   [caches.images]
